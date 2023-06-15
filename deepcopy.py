@@ -16,6 +16,7 @@ def deepcopy(ls):
 
 lis1 = [1, 2, [[1,2,3], 4, 6], 'hello']
 lis2 = deepcopy(lis1)
+print(lis2) # ste tpeluya nuyn lis1-i arjeq@
 lis2[2][0][1] = 5
 print(lis1) # tpeluya ` [1, 2, [[1, 2, 3], 4, 6], 'hello']
 print(lis2) # tpeluya ` [1, 2, [[1, 5, 3], 4, 6], 'hello']
