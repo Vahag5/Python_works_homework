@@ -1,4 +1,4 @@
-ls2 = []
+
 def deepcopy(ls):
     qan = len(ls)
     ls2 = []
