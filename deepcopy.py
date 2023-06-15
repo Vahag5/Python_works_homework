@@ -1,7 +1,7 @@
 def deepcopy(ls):
-    qan = len(ls)
+    qanak = len(ls)
     ls2 = []
-    for i in range(qan): 
+    for i in range(qanak): 
         if type(ls[i]) == list:
             ls2.append(ls[i].copy())     #karanq  senc el ls2[i] = ls[i].copy()
             for j in range(len(ls[i])):
@@ -10,8 +10,12 @@ def deepcopy(ls):
         else:
             ls2.append(ls[i])
     
-    print(ls2)
     return ls2
 
-ls = [1, 2, [4, 6], 'hello']
-deepcopy(ls)
+# Phordzenq ashxatacnenq
+
+ls = [1, 2, [[1,2,3], 4, 6], 'hello']
+ls2 = deepcopy(ls)
+ls2[2][0][1] = 5
+print(ls) # tpeluya ` [1, 2, [[1, 2, 3], 4, 6], 'hello']
+print(ls2) # tpeluya ` [1, 2, [[1, 5, 3], 4, 6], 'hello']
