@@ -14,8 +14,8 @@ def deepcopy(ls):
 
 # Phordzenq ashxatacnenq
 
-ls = [1, 2, [[1,2,3], 4, 6], 'hello']
-ls2 = deepcopy(ls)
-ls2[2][0][1] = 5
-print(ls) # tpeluya ` [1, 2, [[1, 2, 3], 4, 6], 'hello']
-print(ls2) # tpeluya ` [1, 2, [[1, 5, 3], 4, 6], 'hello']
+lis1 = [1, 2, [[1,2,3], 4, 6], 'hello']
+lis2 = deepcopy(lis1)
+lis2[2][0][1] = 5
+print(lis1) # tpeluya ` [1, 2, [[1, 2, 3], 4, 6], 'hello']
+print(lis2) # tpeluya ` [1, 2, [[1, 5, 3], 4, 6], 'hello']
